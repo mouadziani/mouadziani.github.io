@@ -1,0 +1,187 @@
+body {
+  background: #efefef url(../img/bg.png) repeat top left;
+  font-family: 'Roboto Mono', Menlo, Monaco, monospace;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+}
+
+header,
+section,
+article {
+  display: block;
+}
+
+header {
+  margin-bottom: 30px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+section {
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px #cccccc;
+  padding: 20px 20px 5px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a,
+h2,
+h3 {
+  color: #365ABA;
+}
+
+.show {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto Mono', Menlo, Monaco, monospace;
+  font-weight: bold;
+  text-shadow: 0px 2px 0px #eee;
+  margin: 0;
+  color: #666;
+}
+
+h1,
+h2 {
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  margin-top: 0px;
+}
+
+code {
+  background-color: #fff;
+  padding: 0 10px;
+  font-family: Monaco, Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.big {
+  font-size: 1.3em;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+#container {
+  width: 775px;
+  margin: 40px auto 0 auto;
+}
+
+#links {
+  font-family: 'Roboto Mono', Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section h3 {
+  font-size: 1.05em;
+  margin-bottom: 0.5em;
+}
+
+@media all and (max-width: 670px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  body {
+    font-size: 1em;
+  }
+  #container {
+    width: auto;
+    margin: 20px 20px 0 0;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  #links {
+    flex-direction: column;
+  }
+  #links,
+  #projects h3 {
+    font-size: 1.3em;
+  }
+  #links span {
+    text-indent: -1000px;
+    display: block;
+    clear: right;
+    height: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1c1c1c;
+    color: #efefef;
+  }
+
+  section {
+    background: #2d2d2d;
+    box-shadow: 0 1px 2px #666;
+  }
+
+  a,
+  h2,
+  h3 {
+    color: rgba(133, 116, 167, 1); /* #2fc38a */
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-shadow: none;
+    color: #efefef;
+  }
+}
+
+.text-small {
+	font-size: 13px;
+}
+
+hr { 
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #e5e5e5;
+  margin: 1em 0; padding: 0; 
+}
